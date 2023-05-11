@@ -1,0 +1,56 @@
+/* App.css */
+.myDataTable {
+  font-family: Arial, sans-serif; /* กำหนดฟอนต์ให้กับตาราง */
+  border-collapse: collapse; /* ลบเส้นขอบของตาราง */
+  width: 100%; /* กำหนดความกว้างของตาราง */
+}
+
+.myDataTable thead {
+  background-color: #8f8c8c;
+}
+
+.myDataTable th,
+.myDataTable td {
+  padding: 8px;
+}
+
+.myDataTable th { 
+  text-align: left; 
+} 
+
+.myDataTable td {
+  border-bottom: 1px solid #ddd;
+} /*กำหนดเส้นขอบของแถว*/
+
+.myDataTable tr:last-child td {
+  border-bottom: none;
+} /* ลบเส้นขอบของแถวสุดท้าย */
+
+.myDataTable img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} /* กำหนดขนาดของรูปภาพ */
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 18px;
+  color: #888;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px; /* เพิ่มระยะห่างของปุ่มจากขอบเว็บไซต์ */
+}
+
+.actions-container button {
+  margin: 5px; /* เพิ่มระยะห่างรอบขอบของปุ่ม */
+  border-radius: 5px; /* เพิ่มรูปร่างของปุ่มเป็นรูปร่างมนเหล็ก */
+  padding: 10px 20px; /* เพิ่มระยะห่างของข้อความภายในปุ่ม */
+  background-color: #f0f0f0; /* เปลี่ยนสีพื้นหลังของปุ่ม */
+  border: none; /* ลบเส้นขอบของปุ่ม */
+}
