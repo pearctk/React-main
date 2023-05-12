@@ -78,8 +78,9 @@ function MyApp() {
     fetchData(page, newPerPage);
   };
 
-  const handleUpdate = (row) => {
-    console.log('Update row:', row);
+  const handleDelete = (row) => {
+    console.log('Delete row:', row);
+    setItems(prevItems => prevItems.filter(item => item.id !== row.id));
   };
   
   
@@ -102,8 +103,8 @@ function MyApp() {
           onChangeRowsPerPage={handlePerRowsChange}
         />
         <div className='actions-container'>
-          <button onClick={() => handleUpdate(items[0])}>Event</button>
-          </div>
+          <button onClick={() => handleDelete(items[0])}>Delete</button>
+        </div>
       </div>
     );
   }
